@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+bool isVowel(char ch) {
+    ch = tolower(ch); // Convert to lowercase for case-insensitivity
+    return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+}
+
+int main() {
+    char inputString[100];
+
+    printf("Enter a string: ");
+    scanf("%s", inputString);
+
+    printf("Vowels in the string: ");
+    for (int i = 0; i < strlen(inputString); i++) {
+        if (isVowel(inputString[i])) {
+            printf("%c ", inputString[i]);
+        }
+    }
+
+    return 0;
+}
