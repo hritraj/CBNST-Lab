@@ -26,9 +26,7 @@ int main()
     }
     printf("Enter the required x");
     scanf("%d",&x);
-    printf("%d",x-a[0][0]);
-    printf("%d",a[1][0]-a[0][0]);
-    float u=(x-a[0][0])/(a[1][0]-a[0][0]);
+    float u=(float)((x-a[0][0])/(a[1][0]-a[0][0]));
     printf("%f",u);
     return 0;
 }
