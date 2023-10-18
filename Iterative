@@ -14,6 +14,7 @@ int main()
 	//  printf("Enter maximum iteration: ");
 	//  scanf("%d", &N);
 	//  printf("\ni\tx0\t\tf(x0)\t\tx1\t\tf(x1)\n");
+	 printf("i\t\tx1\t\tf1\n");
 	 do
 	 {
 		  x1 = g(x0);
