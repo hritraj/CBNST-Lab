@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+int main()
+{
+    int i,n,j,x;
+    printf("Enter the no. of observations\n");
+    scanf("%d",&n);
+    int a[n][n+1];
+    for(i=0;i<=n-1;i++)
+    {
+        printf("Enter the x %d\n",i);
+        scanf("%d",&a[i][0]);
+    }
+    for(i=0;i<=n-1;i++)
+    {
+        printf("Enter the y %d\n",i);
+        scanf("%d",&a[i][1]);
+    }
+    for(i=2;i<n+1;i++)
+    {
+        for(j=0;j<=n-i;j++)
+        {
+            a[j][i]=a[j+1][i-1]-a[j][i-1];
+        }
+    }
+    printf("Enter the required x");
+    scanf("%d",&x);
+    printf("%d",x-a[0][0]);
+    printf("%d",a[1][0]-a[0][0]);
+    float u=(x-a[0][0])/(a[1][0]-a[0][0]);
+    printf("%f",u);
+    return 0;
+}
