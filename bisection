@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 #include<math.h>
 #define e 0.00001
 #define f(x) (x*x*x-2*x-5)
